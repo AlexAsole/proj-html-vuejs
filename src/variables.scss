@@ -1,0 +1,7 @@
+$jumbotron: '../img/hero-header-bakery.jpg';
+
+@mixin flexAlignBetween  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
