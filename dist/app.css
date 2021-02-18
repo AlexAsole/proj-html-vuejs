@@ -4,6 +4,9 @@
   padding: 0;
 }
 
+#root {
+  font-family: Work Sans, sans-serif;
+}
 #root .header {
   background-image: url("../img/hero-header-bakery.jpg");
   width: 100%;
@@ -30,4 +33,73 @@
 }
 #root .header-bar .menu ul li {
   margin-right: 40px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #5b2ca2;
+}
+#root .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 2px dashed #000;
+}
+#root .header-content-main {
+  width: 420px;
+  margin: 230px 0 0 100px;
+  color: #6a5243;
+}
+#root .header-content-main .upper-title {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+#root .header-content-main h1 {
+  font-family: Source Serif Pro, serif;
+  color: #5b2ca2;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 68px;
+  margin: 20px 0;
+}
+#root .header-content-main .text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+#root .header-content-main .explore {
+  background: #ffffff;
+  color: #5b2ca2;
+  font-family: Work Sans, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+  height: 40px;
+  margin-top: 20px;
+}
+#root .header-content-main .explore:hover {
+  background: #5b2ca2;
+  color: #ffffff;
+  cursor: pointer;
+}
+#root .header-content .demo-btn {
+  background: #ffffff;
+  color: #5b2ca2;
+  font-family: Work Sans, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  border: none;
+  border-radius: 10px;
+  width: 66px;
+  height: 66px;
+}
+#root .header-content .demo-btn:hover {
+  background: #5b2ca2;
+  color: #ffffff;
+  cursor: pointer;
 }

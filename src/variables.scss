@@ -1,7 +1,27 @@
 $jumbotron: '../img/hero-header-bakery.jpg';
 
+$firstfont: Work Sans, sans-serif;
+$secondfont: Source Serif Pro, serif;
+
 @mixin flexAlignBetween  {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@mixin whitebutton {
+    background: $cubeWhite;
+    color: $cubeDaisy;
+    font-family: $firstfont;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    border: none;
+    border-radius: 10px;
+
+    &:hover {
+        background: $cubeDaisy;
+        color: $cubeWhite;
+        cursor: pointer;
+    }
 }
