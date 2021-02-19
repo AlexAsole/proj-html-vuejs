@@ -1,4 +1,8 @@
 $jumbotron: '../img/hero-header-bakery.jpg';
+$corporate: '../img/corporate-bg.jpg';
+$corporate-hover: '../img/corporate-hover-bg.jpg';
+$wedding: '../img/wedding-bg.jpg';
+$wedding-hover: '../img/wedding-hover-bg.jpg';
 
 $firstfont: Work Sans, sans-serif;
 $secondfont: Source Serif Pro, serif;
@@ -6,6 +10,12 @@ $secondfont: Source Serif Pro, serif;
 @mixin flexAlignBetween  {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flexAlignAround  {
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -66,4 +76,24 @@ $secondfont: Source Serif Pro, serif;
     border: none;
     border-radius: 10px;
     box-shadow: 0 5px 20px 5px $cubeBlack;
+}
+
+@mixin blackhover {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    top: 0px;        
+}
+
+@mixin showImage {
+    background-size: cover;
+    width: 700px;
+    height: 720px;
+}
+
+@mixin hoverImage {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
 }

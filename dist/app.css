@@ -154,6 +154,78 @@
   width: 600px;
   margin-right: 300px;
 }
-#root .main-first-content .slider img:first-child {
+#root .main-first-content .slider .image {
   margin-right: 20px;
+  position: relative;
+}
+#root .main-first-content .slider .image .black-hover {
+  display: none;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  top: 0px;
+  width: 400px;
+  height: 510px;
+}
+#root .main-first-content .slider .image .black-hover:nth-of-type(2) {
+  margin-left: 420px;
+}
+#root .main-first-content .slider .image:hover .black-hover {
+  display: block;
+}
+#root .main-second-content {
+  width: 100%;
+  text-align: center;
+}
+#root .main-second-content .title {
+  margin-top: 50px;
+}
+#root .main-second-content .title .upper-title {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+#root .main-second-content .title h2 {
+  font-family: Source Serif Pro, serif;
+  color: #5b2ca2;
+  margin: 20px 0;
+  font-weight: 700;
+  font-size: 32px;
+}
+#root .main-second-content .content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+#root .main-second-content .content-show-1 {
+  background: url("../img/corporate-bg.jpg");
+  background-size: cover;
+  width: 700px;
+  height: 720px;
+}
+#root .main-second-content .content-show-1 .hover-1 {
+  background: url("../img/corporate-hover-bg.jpg");
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+#root .main-second-content .content-show-1:hover .hover-1 {
+  display: block;
+}
+#root .main-second-content .content-show-2 {
+  background: url("../img/wedding-bg.jpg");
+  background-size: cover;
+  width: 700px;
+  height: 720px;
+}
+#root .main-second-content .content-show-2 .hover-2 {
+  background: url("../img/wedding-hover-bg.jpg");
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+#root .main-second-content .content-show-2:hover .hover-2 {
+  display: block;
 }

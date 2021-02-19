@@ -11,6 +11,6 @@ new Vue({
             'CONTACT',
             'MY ACCOUNT'
         ] 
-    },
+    }
 })
 Vue.config.devtools = true;

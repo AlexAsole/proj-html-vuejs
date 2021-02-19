@@ -62,7 +62,6 @@
                 h1 {
                     @include title-style;
                     font-size: 56px;
-                    
                     line-height: 68px;
                     
                 }
@@ -100,7 +99,7 @@
 
     .main {
         width: 100%;
-        
+
         &-first-content {
             @include flexAlignBetween;
             margin-top: 30px;
@@ -134,11 +133,92 @@
 
                 width: 600px;
                 margin-right: 300px;
+                
                  
-                img:first-child {
+                .image{
                     margin-right: 20px;
+                    position: relative;
+
+                    &  .black-hover {
+                        @include blackhover;
+                        width: 400px;
+                        height: 510px;
+
+                        &:nth-of-type(2) {
+                            margin-left: 420px;
+                        }
+                    }
+
+                    &:hover  .black-hover {
+                        display: block;
+                    }
+
+                    
+                }                
+            }
+        }
+
+        &-second-content {
+            width: 100%;
+            text-align: center;
+
+            .title {
+                margin-top: 50px;
+
+                .upper-title {
+                    @include upper-style;
+                }
+                h2 {
+                    @include title-style;
+
+                    font-size: 32px;
                 }
             }
+            
+            .content {
+                @include flexAlignAround;
+
+                width: 100%;
+
+                &-show-1 {
+                    background: url($corporate);
+                    @include showImage;
+
+                    .hover-1 {
+                        background: url($corporate-hover);
+
+                        @include hoverImage;
+                        
+                    }
+
+                    &:hover {
+
+                        .hover-1 {
+                            display: block;
+                        }
+                    }
+                }
+
+                &-show-2 {
+                    background: url($wedding);
+                    @include showImage;
+
+                    .hover-2 {
+                        background: url($wedding-hover);
+
+                        @include hoverImage;
+                    }
+
+                    &:hover {
+
+                        .hover-2 {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            
         }
         
 
