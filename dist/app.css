@@ -143,7 +143,7 @@
   margin-top: 20px;
 }
 #root .main-first-content .infobox .shopping:hover {
-  background: #ffffff;
+  background: #f0edf5;
   color: #5b2ca2;
   cursor: pointer;
 }
@@ -180,6 +180,7 @@
   margin-top: 50px;
 }
 #root .main-second-content .title .upper-title {
+  color: #0a5e6c;
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
@@ -228,4 +229,52 @@
 }
 #root .main-second-content .content-show-2:hover .hover-2 {
   display: block;
+}
+#root .main-third-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  border: 2px solid #000;
+}
+#root .main-third-content .info-box {
+  width: 300px;
+  text-align: center;
+}
+#root .main-third-content .info-box h2 {
+  font-family: Source Serif Pro, serif;
+  color: #5b2ca2;
+  margin: 20px 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+}
+#root .main-third-content .info-box .subtitle {
+  color: #0a5e6c;
+  font-size: 16px;
+  line-height: 29px;
+}
+#root .main-third-content .info-box .show-shop {
+  background: #5b2ca2;
+  color: #ffffff;
+  font-family: Work Sans, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  border: none;
+  border-radius: 10px;
+  width: 150px;
+  height: 40px;
+  margin-top: 20px;
+}
+#root .main-third-content .info-box .show-shop:hover {
+  background: #f0edf5;
+  color: #5b2ca2;
+  cursor: pointer;
+}
+#root .main-third-content .slider {
+  width: 1000px;
+  height: 300px;
+  border: 1px solid #f00;
 }

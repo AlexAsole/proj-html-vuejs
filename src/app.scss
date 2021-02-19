@@ -92,8 +92,6 @@
                     margin: 30px;
                 }
             }
-
-            
         }
     }
 
@@ -152,8 +150,6 @@
                     &:hover  .black-hover {
                         display: block;
                     }
-
-                    
                 }                
             }
         }
@@ -166,6 +162,7 @@
                 margin-top: 50px;
 
                 .upper-title {
+                    color: $cubeAtoll;
                     @include upper-style;
                 }
                 h2 {
@@ -219,6 +216,47 @@
             }
 
             
+        }
+
+        &-third-content {
+            @include flexAlignAround;
+
+            width: 100%;
+            height: 500px;
+            border: 2px solid #000;
+
+            .info-box {
+                width: 300px;
+                text-align: center;
+
+                h2 {
+                    @include title-style;
+
+                    font-size: 36px;
+                    line-height: 46px;
+                }
+
+                .subtitle {
+                    color: $cubeAtoll;
+                    font-size: 16px;
+                    line-height: 29px;
+                }
+
+                .show-shop {
+                    @include bluebutton;
+
+                    width: 150px;
+                    height: 40px;
+                    margin-top: 20px;
+                    
+                }
+            }
+
+            .slider {
+                width: 1000px;
+                height: 300px;
+                border: 1px solid #f00;
+            }
         }
         
 
