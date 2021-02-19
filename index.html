@@ -12,6 +12,7 @@
 </head>
 <body>
     <div id='root'>
+        <!-- HEADER -->
         <div class="header">
             <div class="header-bar">
                 <div class="logo">
@@ -19,14 +20,7 @@
                 </div>
                 <div class="menu">
                     <ul>
-                        <li>HOME</li>
-                        <li>SHOP</li>
-                        <li>ABOUT</li>
-                        <li>GALLERY</li>
-                        <li>LOCATIONS</li>
-                        <li>JOURNAL</li>
-                        <li>CONTACT</li>
-                        <li>MY ACCOUNT</li>
+                        <li v-for="element in menu">{{element}}</li>
                         <li><i class="fas fa-shopping-cart"></i></li>
                     </ul>
                 </div>
@@ -58,6 +52,30 @@
             </div>
             
         </div>
+        <!-- END HEADER -->
+        <!-- MAIN -->
+        <div class="main">
+            <!-- FIRST CONTENT -->
+            <div class="main-first-content">
+                <div class="infobox">
+                    <div class="upper-title">
+                        OUR PRODUCTS
+                    </div>
+                    <h2>
+                        All our delectable pastries are backed fresh in our Kitchen very morning,
+                        and are made with all-natural, all organic ingredients.
+                    </h2>
+                    <button class="shopping">Start Shopping</button>
+                </div>
+                <div class="slider">
+                    <img src="img/choco-chip-cookies-400x510.jpg" alt="">
+                    <img src="img/strawberry-jam-cookies-400x510.jpg" alt="">
+
+                </div>
+            </div>
+            <!-- END FIRST CONTENT -->
+        </div>
+        <!-- END MAIN -->
     </div>
 
 

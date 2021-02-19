@@ -10,7 +10,7 @@
 #root .header {
   background-image: url("../img/hero-header-bakery.jpg");
   width: 100%;
-  height: 900px;
+  height: 800px;
   background-size: cover;
   background-position: -300px;
 }
@@ -20,7 +20,7 @@
   align-items: center;
   width: 100%;
   height: 120px;
-  position: fixed;
+  position: relative;
 }
 #root .header-bar .logo {
   margin: 20px 35px;
@@ -43,11 +43,10 @@
   align-items: center;
   width: 100%;
   height: 100%;
-  border: 2px dashed #000;
 }
 #root .header-content-main {
   width: 420px;
-  margin: 230px 0 0 100px;
+  margin: 0 0 280px 100px;
   color: #6a5243;
 }
 #root .header-content-main .upper-title {
@@ -58,10 +57,10 @@
 #root .header-content-main h1 {
   font-family: Source Serif Pro, serif;
   color: #5b2ca2;
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 68px;
   margin: 20px 0;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 68px;
 }
 #root .header-content-main .text {
   font-size: 18px;
@@ -86,20 +85,75 @@
   color: #ffffff;
   cursor: pointer;
 }
+#root .header-content .demo {
+  margin-bottom: 650px;
+}
 #root .header-content .demo-btn {
   background: #ffffff;
   color: #5b2ca2;
+  font-family: Work Sans, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.3);
+  width: 66px;
+  height: 66px;
+  margin: 30px;
+}
+#root .main {
+  width: 100%;
+}
+#root .main-first-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+#root .main-first-content .infobox {
+  width: 450px;
+  height: 400px;
+  margin-left: 50px;
+}
+#root .main-first-content .infobox .upper-title {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+#root .main-first-content .infobox h2 {
+  font-family: Source Serif Pro, serif;
+  color: #5b2ca2;
+  margin: 20px 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+}
+#root .main-first-content .infobox .shopping {
+  background: #5b2ca2;
+  color: #ffffff;
   font-family: Work Sans, sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
   border: none;
   border-radius: 10px;
-  width: 66px;
-  height: 66px;
+  width: 200px;
+  height: 40px;
+  margin-top: 20px;
 }
-#root .header-content .demo-btn:hover {
-  background: #5b2ca2;
-  color: #ffffff;
+#root .main-first-content .infobox .shopping:hover {
+  background: #ffffff;
+  color: #5b2ca2;
   cursor: pointer;
+}
+#root .main-first-content .slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+  margin-right: 300px;
+}
+#root .main-first-content .slider img:first-child {
+  margin-right: 20px;
 }

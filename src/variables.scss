@@ -9,6 +9,19 @@ $secondfont: Source Serif Pro, serif;
     align-items: center;
 }
 
+@mixin upper-style {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+@mixin title-style {
+    font-family: $secondfont;
+    color: $cubeDaisy;
+    margin: 20px 0;
+    font-weight: 700;
+}
+
 @mixin whitebutton {
     background: $cubeWhite;
     color: $cubeDaisy;
@@ -24,4 +37,33 @@ $secondfont: Source Serif Pro, serif;
         color: $cubeWhite;
         cursor: pointer;
     }
+}
+
+@mixin bluebutton {
+    background: $cubeDaisy;
+    color: $cubeWhite;
+    font-family: $firstfont;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    border: none;
+    border-radius: 10px;
+
+    &:hover {
+        background: $cubeWhite;
+        color: $cubeDaisy;
+        cursor: pointer;
+    }
+}
+
+@mixin symbol-btn {
+    background: $cubeWhite;
+    color: $cubeDaisy;
+    font-family: $firstfont;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px 5px $cubeBlack;
 }

@@ -13,7 +13,7 @@
     .header {
         background-image: url($jumbotron);
         width: 100%;
-        height: 900px;
+        height: 800px;
         background-size: cover;
         background-position: -300px;
 
@@ -22,7 +22,7 @@
 
             width: 100%;
             height: 120px;
-            position: fixed;
+            position: relative;
 
             .logo {
                 margin: 20px 35px;
@@ -49,27 +49,22 @@
 
             width: 100%;
             height: 100%;
-            border: 2px dashed #000;
 
             &-main {
                 width: 420px;
-                margin: 230px 0 0 100px;
+                margin: 0 0 280px 100px;
                 color: $cubeTobbaco;
 
                 .upper-title {
-                    
-                    font-weight: 400;
-                    font-size: 12px;
-                    line-height: 18px;
+                    @include upper-style;
                 }
 
                 h1 {
-                    font-family: $secondfont;
-                    color: $cubeDaisy;
+                    @include title-style;
                     font-size: 56px;
-                    font-weight: 700;
+                    
                     line-height: 68px;
-                    margin: 20px 0;
+                    
                 }
 
                 .text {
@@ -88,16 +83,65 @@
             }
 
             .demo {
+                margin-bottom: 650px;
+
                 &-btn {
-                    @include whitebutton;
+                    @include symbol-btn;
     
                     width: 66px;
                     height: 66px;
-                    
+                    margin: 30px;
                 }
             }
 
             
         }
+    }
+
+    .main {
+        width: 100%;
+        
+        &-first-content {
+            @include flexAlignBetween;
+            margin-top: 30px;
+
+            .infobox {
+                width: 450px;
+                height: 400px;
+                margin-left: 50px;
+
+                .upper-title {
+                    @include upper-style;
+                }
+
+                h2 {
+                    @include title-style;
+
+                    font-size: 36px;
+                    line-height: 46px;
+                }
+                .shopping {
+                    @include bluebutton;
+
+                    width: 200px;
+                    height: 40px;
+                    margin-top: 20px;
+                }
+            }
+    
+            .slider {
+                @include flexAlignBetween;
+
+                width: 600px;
+                margin-right: 300px;
+                 
+                img:first-child {
+                    margin-right: 20px;
+                }
+            }
+        }
+        
+
+        
     }
 }
