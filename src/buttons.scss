@@ -1,0 +1,45 @@
+@mixin whitebutton {
+    background: $cubeWhite;
+    color: $cubeDaisy;
+    font-family: $firstfont;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    border: none;
+    border-radius: 10px;
+
+    &:hover {
+        background: $cubeDaisy;
+        color: $cubeWhite;
+        cursor: pointer;
+    }
+}
+
+@mixin bluebutton {
+    background: $cubeDaisy;
+    color: $cubeWhite;
+    font-family: $firstfont;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    border: none;
+    border-radius: 10px;
+
+    &:hover {
+        background: $cubeQuiteWhite;
+        color: $cubeDaisy;
+        cursor: pointer;
+    }
+}
+
+@mixin symbol-btn {
+    background: $cubeWhite;
+    color: $cubeDaisy;
+    font-family: $firstfont;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px 5px $cubeBlack;
+}
