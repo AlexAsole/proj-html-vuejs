@@ -1,0 +1,75 @@
+@mixin flexAlignBetween  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flexBaseBetween  {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+@mixin flexAlignAround  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin basicContent {
+    margin-top: 30px;
+    width: $max;
+    height: 650px;
+}
+
+@mixin upper-style {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+@mixin title-style {
+    font-family: $secondfont;
+    color: $cubeDaisy;
+    margin: 20px 0;
+    font-weight: 700;
+}
+
+@mixin blackhover {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    top: $min;        
+}
+
+@mixin showImage {
+    background-size: cover;
+    width: 700px;
+    height: 720px;
+}
+
+@mixin hoverImage {
+    display: none;
+    width: $max;
+    height: $max;
+    background-size: cover;
+}
+
+@mixin halfHorizontalSpace {
+    width: $half;
+    height: $max;
+}
+@mixin halfVerticalSpace {
+    width: $max;
+    height: $half;
+}
+
+@mixin quarterHorizontalSpace {
+    width: calc(25% - 10px);
+    height: $max;
+}
+
+@mixin fullSize {
+    width: $max;
+    height: $max;
+}

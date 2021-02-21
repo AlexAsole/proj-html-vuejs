@@ -1,5 +1,6 @@
 @import 'colors';
 @import 'variables';
+@import 'mixin';
 @import 'buttons';
 
 * {
@@ -13,7 +14,7 @@
 
     .header {
         background-image: url($jumbotron);
-        width: 100%;
+        width: $max;
         height: 800px;
         background-size: cover;
         background-position: -300px;
@@ -21,7 +22,7 @@
         &-bar {
             @include flexAlignBetween;
 
-            width: 100%;
+            width: $max;
             height: 120px;
             position: relative;
 
@@ -47,9 +48,7 @@
 
         &-content {
             @include flexAlignBetween;
-
-            width: 100%;
-            height: 100%;
+            @include fullSize;
 
             &-main {
                 width: 420px;
@@ -64,7 +63,6 @@
                     @include title-style;
                     font-size: 56px;
                     line-height: 68px;
-                    
                 }
 
                 .text {
@@ -102,8 +100,9 @@
 
         &-first-content {
             @include flexAlignBetween;
-            width: 100%;
-            margin-top: 30px;
+            @include basicContent;
+
+            height: auto;
 
             .infobox {
                 width: 450px;
@@ -119,6 +118,7 @@
                     font-size: 36px;
                     line-height: 46px;
                 }
+
                 .shopping {
                     @include bluebutton;
 
@@ -131,7 +131,6 @@
             .slider {
                 @include flexAlignBetween;
        
-                 
                 .image{
                     margin-left: 20px;
                     position: relative;
@@ -154,16 +153,19 @@
         }
 
         &-second-content {
-            width: 100%;
-            margin-top: 30px;
+            @include basicContent;
+
+            height: auto;
+
             .title {
                 text-align: center;
-                margin-top: 50px;
 
                 .upper-title {
-                    color: $cubeAtoll;
                     @include upper-style;
+
+                    color: $cubeAtoll;
                 }
+
                 h2 {
                     @include title-style;
 
@@ -181,8 +183,6 @@
                     @include showImage;
 
                     width: $halfWidth-50px;
-
-                    
 
                     .hover-1 {
                         background: url($corporate-hover);
@@ -222,9 +222,9 @@
 
         &-third-content {
             @include flexAlignAround;
+            @include basicContent;
 
-            width: 100%;
-            margin-top: 30px;
+            height: auto;
 
             .info-box {
                 width: 300px;
@@ -249,13 +249,11 @@
                     width: 150px;
                     height: 40px;
                     margin-top: 20px;
-                    
                 }
             }
 
             .slider {
                 @include flexBaseBetween;
-
 
                 .card {
                     margin-left: 20px;
@@ -279,7 +277,6 @@
                                 display: block;
                             }
                         }
-                        
                     }
 
                     &-text {
@@ -294,23 +291,17 @@
             }
         }
 
-        &-fourth-container {
+        &-fourth-content{
             @include flexAlignAround;
+            @include basicContent;
 
             background: url($process-1);
             background-size: cover;
-            width: 100%;
-            height: 650px;
-            margin-top: 30px;
-            
         }
 
-        &-fifth-container {
+        &-fifth-content {
             @include flexAlignBetween;
-            width: 100%;
-            height: 650px;
-            margin-top: 30px;
-            border: 1px solid #000;
+            @include basicContent;
 
             .left-container {
                 background: url($process-2);
@@ -324,6 +315,81 @@
                 background: $cubeQuiteWhite;
                 width: $halfWidth-20px;
                 height: 100%;
+            }
+        }
+
+        &-sixth-content {
+            @include basicContent;
+            background: url($process-3);
+            background-size: cover;
+        }
+
+        &-seventh-content {
+            @include flexAlignBetween;
+            @include basicContent;
+
+            img {
+                width: 100%;
+            }   
+
+            .left-container {
+                @include halfHorizontalSpace;
+
+                .text {
+                    width: 100%;
+                    transform: translate(0px, -4px);
+                    height: $fullHeight-430px;
+                    background: $cubeQuiteWhite;
+                }
+            }
+
+            .right-container {
+                @include halfHorizontalSpace;
+
+                .text {
+                    width: 100%;
+                    transform: translate(0px, -4px);
+                    height: $fullHeight-430px;
+                    background: $cubeChalk;
+                }
+            }             
+        }
+
+        &-eighth-content {
+            @include basicContent;
+
+            .first-half {
+                @include flexAlignBetween;
+                @include halfVerticalSpace;
+                
+                &-image {
+                    @include quarterHorizontalSpace;
+
+                    img {
+                        @include fullSize;
+                    }
+                }
+
+                &-center {
+                    @include halfHorizontalSpace;
+
+                    background: $cubeQuiteWhite;
+                }
+            }
+
+            .second-half {
+                @include flexAlignBetween;
+                @include halfVerticalSpace; 
+
+                margin-top: 30px;
+
+                &-image {
+                    @include quarterHorizontalSpace;
+
+                    img {
+                        @include fullSize;
+                    }
+                }
             }
         }
     }

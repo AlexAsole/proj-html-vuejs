@@ -11,56 +11,10 @@ $process-3: '../img/bakery-process-3.jpg';
 $firstfont: Work Sans, sans-serif;
 $secondfont: Source Serif Pro, serif;
 
-$halfWidth-20px: calc(100%/2 - 20px);
-$halfWidth-50px: calc(100%/2 - 50px);
+$halfWidth-20px: calc(50% - 20px);
+$halfWidth-50px: calc(50% - 50px);
+$fullHeight-430px: calc(100% - 430px);
 
-@mixin flexAlignBetween  {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-@mixin flexBaseBetween  {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
-
-@mixin flexAlignAround  {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-@mixin upper-style {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 18px;
-}
-
-@mixin title-style {
-    font-family: $secondfont;
-    color: $cubeDaisy;
-    margin: 20px 0;
-    font-weight: 700;
-}
-
-@mixin blackhover {
-    display: none;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.4);
-    top: 0px;        
-}
-
-@mixin showImage {
-    background-size: cover;
-    width: 700px;
-    height: 720px;
-}
-
-@mixin hoverImage {
-    display: none;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-}
+$max: 100%;
+$half: 50%;
+$min: 0;
