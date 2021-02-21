@@ -103,18 +103,19 @@
   margin: 30px;
 }
 #root .main {
-  width: 100%;
+  width: 1300px;
+  margin: 0 auto;
 }
 #root .main-first-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   margin-top: 30px;
 }
 #root .main-first-content .infobox {
   width: 450px;
   height: 400px;
-  margin-left: 50px;
 }
 #root .main-first-content .infobox .upper-title {
   font-weight: 400;
@@ -151,11 +152,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 600px;
-  margin-right: 300px;
 }
 #root .main-first-content .slider .image {
-  margin-right: 20px;
+  margin-left: 20px;
   position: relative;
 }
 #root .main-first-content .slider .image .black-hover {
@@ -174,9 +173,10 @@
 }
 #root .main-second-content {
   width: 100%;
-  text-align: center;
+  margin-top: 30px;
 }
 #root .main-second-content .title {
+  text-align: center;
   margin-top: 50px;
 }
 #root .main-second-content .title .upper-title {
@@ -194,7 +194,7 @@
 }
 #root .main-second-content .content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
 }
@@ -203,6 +203,7 @@
   background-size: cover;
   width: 700px;
   height: 720px;
+  width: calc(100%/2 - 50px);
 }
 #root .main-second-content .content-show-1 .hover-1 {
   background: url("../img/corporate-hover-bg.jpg");
@@ -219,6 +220,7 @@
   background-size: cover;
   width: 700px;
   height: 720px;
+  width: calc(100%/2 - 50px);
 }
 #root .main-second-content .content-show-2 .hover-2 {
   background: url("../img/wedding-hover-bg.jpg");
@@ -235,7 +237,7 @@
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 500px;
+  margin-top: 30px;
 }
 #root .main-third-content .info-box {
   width: 300px;
@@ -307,4 +309,35 @@
   text-align: center;
   font-size: 24px;
   line-height: 35px;
+}
+#root .main-fourth-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: url("../img/bakery-process-1.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 650px;
+  margin-top: 30px;
+}
+#root .main-fifth-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 650px;
+  margin-top: 30px;
+  border: 1px solid #000;
+}
+#root .main-fifth-container .left-container {
+  background: url("../img/bakery-process-2.jpg");
+  width: calc(100%/2 - 20px);
+  height: 100%;
+  background-size: cover;
+  background-position: right;
+}
+#root .main-fifth-container .right-container {
+  background: #f0edf5;
+  width: calc(100%/2 - 20px);
+  height: 100%;
 }

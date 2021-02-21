@@ -3,9 +3,16 @@ $corporate: '../img/corporate-bg.jpg';
 $corporate-hover: '../img/corporate-hover-bg.jpg';
 $wedding: '../img/wedding-bg.jpg';
 $wedding-hover: '../img/wedding-hover-bg.jpg';
+$process-1: '../img/bakery-process-1.jpg';
+$process-2: '../img/bakery-process-2.jpg';
+$process-3: '../img/bakery-process-3.jpg';
+
 
 $firstfont: Work Sans, sans-serif;
 $secondfont: Source Serif Pro, serif;
+
+$halfWidth-20px: calc(100%/2 - 20px);
+$halfWidth-50px: calc(100%/2 - 50px);
 
 @mixin flexAlignBetween  {
     display: flex;
