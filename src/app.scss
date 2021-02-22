@@ -446,11 +446,45 @@
             @include basicContent;
             background: url($process-3);
             background-size: cover;
+            color: $cubeWhite;
+
+            .black-back {
+                @include fullSize;
+
+                background: $cubeBlack;
+            }
+
+            .first {
+                @include flexAlignBetween;
+                @include processTitle;
+                h2 {
+                    margin-left: 60px;
+                }
+
+                .number {
+                    margin-top: -90px;
+                    margin-right: 60px;
+                }
+            }
+
+            .second {
+                @include processText;
+
+                .text {
+                    margin-left: 60px;
+                }
+            }
+
+            .half {
+                @include halfVerticalSpace;
+            }
         }
 
         &-seventh-content {
             @include flexAlignBetween;
             @include basicContent;
+
+            
 
             img {
                 width: $max;
@@ -464,6 +498,9 @@
                     transform: translate(0px, -4px);
                     height: $fullHeight-430px;
                     background: $cubeQuiteWhite;
+                    text-align: center;
+
+                    @include location;
                 }
             }
 
@@ -475,6 +512,9 @@
                     transform: translate(0px, -4px);
                     height: $fullHeight-430px;
                     background: $cubeChalk;
+                    text-align: center;
+
+                    @include location;
                 }
             }             
         }
@@ -495,9 +535,29 @@
                 }
 
                 &-center {
+                    @include flexCenter;
                     @include halfHorizontalSpace;
 
+                    flex-direction: column;
                     background: $cubeQuiteWhite;
+
+                    .upper-title {
+                        @include upper-style;
+                        color: $cubeAtoll;
+                    }
+
+                    h2 {
+                        @include title-style;
+                        font-size: 36px;
+                        line-height: 46px;
+                    }
+
+                    .share {
+                        @include bluebutton;
+
+                        width: 120px;
+                        height: 40px;
+                    }
                 }
             }
 

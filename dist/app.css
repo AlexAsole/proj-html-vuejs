@@ -36,7 +36,7 @@
   margin-right: 40px;
   font-size: 12px;
   font-weight: 500;
-  color: #5b2ca2;
+  color: #3698db;
 }
 #root .header-content {
   display: flex;
@@ -57,7 +57,7 @@
 }
 #root .header-content-main h1 {
   font-family: Source Serif Pro, serif;
-  color: #5b2ca2;
+  color: #3698db;
   margin: 20px 0;
   font-weight: 700;
   font-size: 56px;
@@ -70,7 +70,7 @@
 }
 #root .header-content-main .explore {
   background: #ffffff;
-  color: #5b2ca2;
+  color: #3698db;
   font-family: Work Sans, sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -82,7 +82,7 @@
   margin-top: 20px;
 }
 #root .header-content-main .explore:hover {
-  background: #5b2ca2;
+  background: #3698db;
   color: #ffffff;
   cursor: pointer;
 }
@@ -91,7 +91,7 @@
 }
 #root .header-content .demo-btn {
   background: #ffffff;
-  color: #5b2ca2;
+  color: #3698db;
   font-family: Work Sans, sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -127,14 +127,14 @@
 }
 #root .main-first-content .infobox h2 {
   font-family: Source Serif Pro, serif;
-  color: #5b2ca2;
+  color: #3698db;
   margin: 20px 0;
   font-weight: 700;
   font-size: 36px;
   line-height: 46px;
 }
 #root .main-first-content .infobox .shopping {
-  background: #5b2ca2;
+  background: #3698db;
   color: #ffffff;
   font-family: Work Sans, sans-serif;
   font-weight: 500;
@@ -148,7 +148,7 @@
 }
 #root .main-first-content .infobox .shopping:hover {
   background: #f0edf5;
-  color: #5b2ca2;
+  color: #3698db;
   cursor: pointer;
 }
 #root .main-first-content .slider {
@@ -194,7 +194,7 @@
 #root .main-first-content .slider .image .arrow {
   width: 40px;
   height: 80px;
-  background: #5b2ca2;
+  background: #3698db;
   opacity: 0.5;
   position: absolute;
   top: 40%;
@@ -230,7 +230,7 @@
 }
 #root .main-second-content .title h2 {
   font-family: Source Serif Pro, serif;
-  color: #5b2ca2;
+  color: #3698db;
   margin: 20px 0;
   font-weight: 700;
   font-size: 32px;
@@ -268,7 +268,7 @@
   line-height: 30px;
 }
 #root .main-second-content .content-show-1 .hover-1 .explore {
-  background: #5b2ca2;
+  background: #3698db;
   color: #ffffff;
   font-family: Work Sans, sans-serif;
   font-weight: 500;
@@ -282,7 +282,7 @@
 }
 #root .main-second-content .content-show-1 .hover-1 .explore:hover {
   background: #f0edf5;
-  color: #5b2ca2;
+  color: #3698db;
   cursor: pointer;
 }
 #root .main-second-content .content-show-1:hover .hover-1 {
@@ -315,7 +315,7 @@
   line-height: 30px;
 }
 #root .main-second-content .content-show-2 .hover-2 .explore {
-  background: #5b2ca2;
+  background: #3698db;
   color: #ffffff;
   font-family: Work Sans, sans-serif;
   font-weight: 500;
@@ -329,7 +329,7 @@
 }
 #root .main-second-content .content-show-2 .hover-2 .explore:hover {
   background: #f0edf5;
-  color: #5b2ca2;
+  color: #3698db;
   cursor: pointer;
 }
 #root .main-second-content .content-show-2:hover .hover-2 {
@@ -350,7 +350,7 @@
 }
 #root .main-third-content .info-box h2 {
   font-family: Source Serif Pro, serif;
-  color: #5b2ca2;
+  color: #3698db;
   margin: 20px 0;
   font-weight: 700;
   font-size: 36px;
@@ -362,7 +362,7 @@
   line-height: 29px;
 }
 #root .main-third-content .info-box .show-shop {
-  background: #5b2ca2;
+  background: #3698db;
   color: #ffffff;
   font-family: Work Sans, sans-serif;
   font-weight: 500;
@@ -376,7 +376,7 @@
 }
 #root .main-third-content .info-box .show-shop:hover {
   background: #f0edf5;
-  color: #5b2ca2;
+  color: #3698db;
   cursor: pointer;
 }
 #root .main-third-content .slider {
@@ -388,7 +388,7 @@
 #root .main-third-content .slider .arrow {
   width: 40px;
   height: 80px;
-  background: #5b2ca2;
+  background: #3698db;
   opacity: 0.5;
   position: absolute;
   top: 40%;
@@ -440,7 +440,7 @@
 }
 #root .main-third-content .slider .card-text {
   font-family: Source Serif Pro, serif;
-  color: #5b2ca2;
+  color: #3698db;
   margin: 20px 0;
   font-weight: 700;
   width: 100%;
@@ -587,7 +587,7 @@
 }
 #root .main-fifth-content .right-container .text {
   font-family: Source Serif Pro, serif;
-  color: #5b2ca2;
+  color: #3698db;
   margin: 20px 0;
   font-weight: 700;
   font-size: 44px;
@@ -598,6 +598,56 @@
   height: 650px;
   background: url("../img/bakery-process-3.jpg");
   background-size: cover;
+  color: #ffffff;
+}
+#root .main-sixth-content .black-back {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+#root .main-sixth-content .first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#root .main-sixth-content .first h2 {
+  width: 50%;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 68px;
+}
+#root .main-sixth-content .first .number {
+  font-weight: 200;
+  font-size: 96px;
+  line-height: 96px;
+}
+#root .main-sixth-content .first h2 {
+  margin-left: 60px;
+}
+#root .main-sixth-content .first .number {
+  margin-top: -90px;
+  margin-right: 60px;
+}
+#root .main-sixth-content .second .text {
+  width: 35%;
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 50px;
+  margin-left: 60%;
+}
+#root .main-sixth-content .second .text h4 {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 15px;
+}
+#root .main-sixth-content .second .text {
+  margin-left: 60px;
+}
+#root .main-sixth-content .half {
+  width: 100%;
+  height: 50%;
 }
 #root .main-seventh-content {
   display: flex;
@@ -619,6 +669,43 @@
   transform: translate(0px, -4px);
   height: calc(100% - 430px);
   background: #f0edf5;
+  text-align: center;
+}
+#root .main-seventh-content .left-container .text h3 {
+  font-family: Source Serif Pro, serif;
+  color: #3698db;
+  margin: 20px 0;
+  font-weight: 700;
+  margin-top: 0;
+  padding-top: 50px;
+  font-size: 36px;
+  line-height: 46px;
+}
+#root .main-seventh-content .left-container .text .info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  font-size: 12px;
+  line-height: 16px;
+  color: #0a5e6c;
+}
+#root .main-seventh-content .left-container .text .info .map {
+  background: #ffffff;
+  color: #3698db;
+  font-family: Work Sans, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  border: none;
+  border-radius: 10px;
+  width: 120px;
+  height: 40px;
+}
+#root .main-seventh-content .left-container .text .info .map:hover {
+  background: #3698db;
+  color: #ffffff;
+  cursor: pointer;
 }
 #root .main-seventh-content .right-container {
   width: 50%;
@@ -629,6 +716,43 @@
   transform: translate(0px, -4px);
   height: calc(100% - 430px);
   background: #f0caa1;
+  text-align: center;
+}
+#root .main-seventh-content .right-container .text h3 {
+  font-family: Source Serif Pro, serif;
+  color: #3698db;
+  margin: 20px 0;
+  font-weight: 700;
+  margin-top: 0;
+  padding-top: 50px;
+  font-size: 36px;
+  line-height: 46px;
+}
+#root .main-seventh-content .right-container .text .info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  font-size: 12px;
+  line-height: 16px;
+  color: #0a5e6c;
+}
+#root .main-seventh-content .right-container .text .info .map {
+  background: #ffffff;
+  color: #3698db;
+  font-family: Work Sans, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  border: none;
+  border-radius: 10px;
+  width: 120px;
+  height: 40px;
+}
+#root .main-seventh-content .right-container .text .info .map:hover {
+  background: #3698db;
+  color: #ffffff;
+  cursor: pointer;
 }
 #root .main-eighth-content {
   margin-top: 220px;
@@ -651,9 +775,44 @@
   height: 100%;
 }
 #root .main-eighth-content .first-half-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50%;
   height: 100%;
+  flex-direction: column;
   background: #f0edf5;
+}
+#root .main-eighth-content .first-half-center .upper-title {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #0a5e6c;
+}
+#root .main-eighth-content .first-half-center h2 {
+  font-family: Source Serif Pro, serif;
+  color: #3698db;
+  margin: 20px 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+}
+#root .main-eighth-content .first-half-center .share {
+  background: #3698db;
+  color: #ffffff;
+  font-family: Work Sans, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  border: none;
+  border-radius: 10px;
+  width: 120px;
+  height: 40px;
+}
+#root .main-eighth-content .first-half-center .share:hover {
+  background: #f0edf5;
+  color: #3698db;
+  cursor: pointer;
 }
 #root .main-eighth-content .second-half {
   display: flex;
