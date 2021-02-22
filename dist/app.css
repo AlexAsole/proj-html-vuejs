@@ -21,6 +21,7 @@
   width: 100%;
   height: 120px;
   position: relative;
+  z-index: 5;
 }
 #root .header-bar .logo {
   margin: 20px 35px;
@@ -110,7 +111,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 220px;
   width: 100%;
   height: 650px;
   height: auto;
@@ -162,19 +163,58 @@
 #root .main-first-content .slider .image .black-hover {
   display: none;
   position: absolute;
+  left: 0;
   background: rgba(0, 0, 0, 0.4);
   top: 0;
+  text-align: center;
+  padding-top: 200px;
+  color: #ffffff;
   width: 400px;
   height: 510px;
 }
-#root .main-first-content .slider .image .black-hover:nth-of-type(2) {
-  margin-left: 420px;
+#root .main-first-content .slider .image .black-hover h3 {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 29px;
+}
+#root .main-first-content .slider .image .black-hover .subtitle {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+}
+#root .main-first-content .slider .image .black-hover .price {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
 }
 #root .main-first-content .slider .image:hover .black-hover {
   display: block;
+  cursor: pointer;
+}
+#root .main-first-content .slider .image .arrow {
+  width: 40px;
+  height: 80px;
+  background: #5b2ca2;
+  opacity: 0.5;
+  position: absolute;
+  top: 40%;
+  z-index: 2;
+  font-size: 16px;
+  line-height: 29px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root .main-first-content .slider .image .arrow:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+#root .main-first-content .slider .image .right {
+  margin-left: 360px;
 }
 #root .main-second-content {
-  margin-top: 30px;
+  margin-top: 220px;
   width: 100%;
   height: 650px;
   height: auto;
@@ -214,6 +254,36 @@
   width: 100%;
   height: 100%;
   background-size: cover;
+  text-align: center;
+  padding-top: 280px;
+}
+#root .main-second-content .content-show-1 .hover-1 .upper-title {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 30px;
+}
+#root .main-second-content .content-show-1 .hover-1 h2 {
+  color: #ffffff;
+  font-size: 34px;
+  line-height: 30px;
+}
+#root .main-second-content .content-show-1 .hover-1 .explore {
+  background: #5b2ca2;
+  color: #ffffff;
+  font-family: Work Sans, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  border: none;
+  border-radius: 10px;
+  width: 120px;
+  height: 40px;
+  margin-top: 15px;
+}
+#root .main-second-content .content-show-1 .hover-1 .explore:hover {
+  background: #f0edf5;
+  color: #5b2ca2;
+  cursor: pointer;
 }
 #root .main-second-content .content-show-1:hover .hover-1 {
   display: block;
@@ -231,6 +301,36 @@
   width: 100%;
   height: 100%;
   background-size: cover;
+  text-align: center;
+  padding-top: 280px;
+}
+#root .main-second-content .content-show-2 .hover-2 .upper-title {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 30px;
+}
+#root .main-second-content .content-show-2 .hover-2 h2 {
+  color: #ffffff;
+  font-size: 34px;
+  line-height: 30px;
+}
+#root .main-second-content .content-show-2 .hover-2 .explore {
+  background: #5b2ca2;
+  color: #ffffff;
+  font-family: Work Sans, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  border: none;
+  border-radius: 10px;
+  width: 120px;
+  height: 40px;
+  margin-top: 15px;
+}
+#root .main-second-content .content-show-2 .hover-2 .explore:hover {
+  background: #f0edf5;
+  color: #5b2ca2;
+  cursor: pointer;
 }
 #root .main-second-content .content-show-2:hover .hover-2 {
   display: block;
@@ -239,7 +339,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 220px;
   width: 100%;
   height: 650px;
   height: auto;
@@ -283,6 +383,32 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  position: relative;
+}
+#root .main-third-content .slider .arrow {
+  width: 40px;
+  height: 80px;
+  background: #5b2ca2;
+  opacity: 0.5;
+  position: absolute;
+  top: 40%;
+  z-index: 2;
+  font-size: 16px;
+  line-height: 29px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root .main-third-content .slider .arrow:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+#root .main-third-content .slider .left {
+  left: 20px;
+}
+#root .main-third-content .slider .right {
+  right: 0;
 }
 #root .main-third-content .slider .card {
   margin-left: 20px;
@@ -297,13 +423,20 @@
 #root .main-third-content .slider .card-image-hover {
   display: none;
   position: absolute;
+  left: 0;
   background: rgba(0, 0, 0, 0.4);
   top: 0;
+  text-align: center;
+  padding-top: 200px;
+  color: #ffffff;
   width: 100%;
   height: 100%;
+  padding-top: 0;
 }
 #root .main-third-content .slider .card-image:hover .card-image-hover {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #root .main-third-content .slider .card-text {
   font-family: Source Serif Pro, serif;
@@ -315,21 +448,69 @@
   font-size: 24px;
   line-height: 35px;
 }
+#root .main-third-content .slider .card-text .price {
+  font-weight: 400;
+  font-size: 22px;
+}
 #root .main-fourth-content {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 30px;
+  margin-top: 220px;
   width: 100%;
   height: 650px;
   background: url("../img/bakery-process-1.jpg");
   background-size: cover;
+  color: #ffffff;
+}
+#root .main-fourth-content .black-back {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+#root .main-fourth-content .first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#root .main-fourth-content .first h2 {
+  width: 50%;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 68px;
+}
+#root .main-fourth-content .first .number {
+  font-weight: 200;
+  font-size: 96px;
+  line-height: 96px;
+}
+#root .main-fourth-content .first h2 {
+  margin-left: 60px;
+}
+#root .main-fourth-content .first .number {
+  margin-top: -90px;
+  margin-right: 60px;
+}
+#root .main-fourth-content .second .text {
+  width: 35%;
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 50px;
+  margin-left: 60%;
+}
+#root .main-fourth-content .second .text h4 {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 15px;
+}
+#root .main-fourth-content .half {
+  width: 100%;
+  height: 50%;
 }
 #root .main-fifth-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 220px;
   width: 100%;
   height: 650px;
 }
@@ -340,13 +521,79 @@
   background-size: cover;
   background-position: right;
 }
+#root .main-fifth-content .left-container .black-back {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+#root .main-fifth-content .left-container .first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+#root .main-fifth-content .left-container .first h2 {
+  width: 50%;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 68px;
+}
+#root .main-fifth-content .left-container .first .number {
+  font-weight: 200;
+  font-size: 96px;
+  line-height: 96px;
+}
+#root .main-fifth-content .left-container .first h2 {
+  margin-left: 60px;
+}
+#root .main-fifth-content .left-container .first .number {
+  margin-top: -90px;
+  margin-right: 60px;
+}
+#root .main-fifth-content .left-container .second .text {
+  width: 35%;
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 50px;
+  margin-left: 60%;
+}
+#root .main-fifth-content .left-container .second .text h4 {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 15px;
+}
+#root .main-fifth-content .left-container .second .text {
+  width: 50%;
+  margin-left: 50px;
+  color: #ffffff;
+}
+#root .main-fifth-content .left-container .half {
+  width: 100%;
+  height: 50%;
+}
 #root .main-fifth-content .right-container {
   background: #f0edf5;
   width: calc(50% - 20px);
   height: 100%;
+  text-align: justify;
+  padding: 50px;
+}
+#root .main-fifth-content .right-container .upper-title {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+#root .main-fifth-content .right-container .text {
+  font-family: Source Serif Pro, serif;
+  color: #5b2ca2;
+  margin: 20px 0;
+  font-weight: 700;
+  font-size: 44px;
 }
 #root .main-sixth-content {
-  margin-top: 30px;
+  margin-top: 220px;
   width: 100%;
   height: 650px;
   background: url("../img/bakery-process-3.jpg");
@@ -356,7 +603,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 220px;
   width: 100%;
   height: 650px;
 }
@@ -384,7 +631,7 @@
   background: #f0caa1;
 }
 #root .main-eighth-content {
-  margin-top: 30px;
+  margin-top: 220px;
   width: 100%;
   height: 650px;
 }
