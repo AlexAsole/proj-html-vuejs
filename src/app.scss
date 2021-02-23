@@ -439,6 +439,14 @@
                     @include title-style;
                     font-size: 44px;
                 }
+
+                .founder {
+                    @include upper-style;
+
+                    color:$cubeAtoll;
+                    font-size: 16px;
+                    line-height: 29px;
+                }
             }
         }
 
@@ -572,6 +580,131 @@
 
                     img {
                         @include fullSize;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        width: $max;
+
+        &-first {
+            background: url($call-action);
+            margin-top: $margin-second;
+            width: $max;
+            height: 450px;
+            background-size: cover;
+            padding-top: 100px;
+            padding-left: 150px;
+
+            .upper-title {
+                @include upper-style;
+                
+                color:$cubeWhite;
+            }
+
+            .title {
+                @include title-style;
+
+                color: $cubeWhite;
+                font-family: $secondfont;
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 60px;
+            }
+
+            .shop {
+                @include whitebutton;
+
+                width: 160px;
+                height: 60px;
+                margin-top: 60px;
+            }
+        }
+
+        &-second {
+            @include flexAlignBetween;
+            background: $cubeWhite;
+            margin: 0 auto;
+            width: 1300px;
+            height: 450px;
+
+            &-left {
+                @include halfHorizontalSpace;
+                padding-top: 70px;
+                position: relative;
+
+                ul {
+                    @include flexAlignBetween;
+                    list-style: none;
+                    margin-top: 70px;
+                    
+                    li {
+                        margin-right: 40px;
+                        font-size: 12px; 
+                        font-weight: 500;
+                        color: $cubeDaisy                       
+                    }
+                }
+
+                .copyright {
+                    font-family: $secondfont;
+                    color: $cubeAtoll;
+                    margin-top: 120px;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 22px; 
+                }
+
+                .number {
+                    background: $cubeQuiteWhite;
+                    position: absolute;
+                    text-align: center;
+                    left: 96%;
+                    top: 53%;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+
+                }
+            }
+
+            &-right {
+                @include halfHorizontalSpace;
+                text-align: right;
+                padding-top: 70px;
+
+                .title {
+                    @include title-style;
+                    color: $cubeDaisy;
+                    font-family: $secondfont;
+                    font-size: 25px;
+                    line-height: 34px;
+                    margin-bottom: 70px;
+                }
+
+                input {
+                    width: 300px;
+                    height: 40px;
+                    border-radius: 5px;
+                    border: 1px solid $cubeManatee;
+                }
+
+                .subscribe {
+                    @include bluebutton;
+                    width: 120px;
+                    height: 40px;
+                }
+
+                .icons {
+                    font-size: 18px;
+                    line-height: 18px;
+                    margin-top: 120px;
+                    color: $cubeDaisy;
+
+                    i {
+                        margin-right: 30px;
                     }
                 }
             }
