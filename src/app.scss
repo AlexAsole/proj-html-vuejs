@@ -9,6 +9,7 @@
 
 #root {
     font-family: $firstfont;
+    position: relative;
 
     .header {
         background-image: url($jumbotron);
@@ -49,6 +50,8 @@
             @include flexAlignBetween;
             @include fullSize;
 
+            position: relative;
+
             &-main {
                 width: 420px;
                 margin: 0 0 280px 100px;
@@ -81,13 +84,22 @@
 
             .demo {
                 margin-bottom: 650px;
+                position: fixed;
+                right: 0;
 
                 &-btn {
                     @include symbol-btn;
+                    text-align: center;
+                    font-size: 26px;
     
                     width: 66px;
                     height: 66px;
                     margin: 30px;
+                    padding-top: 16px;
+
+                    .subtitle {
+                        font-size: 12px;
+                    }
                 }
             }
         }
@@ -709,5 +721,9 @@
                 }
             }
         }
+    }
+
+    .top-button {
+        @include up-button;
     }
 }
