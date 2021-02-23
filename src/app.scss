@@ -23,7 +23,7 @@
 
             width: $max;
             height: 120px;
-            position: relative;
+            position: fixed;
             z-index: 5;
 
             .logo {
@@ -46,11 +46,16 @@
             }
         }
 
+        .white-bar {
+            background: $cubeWhite;
+        }
+
         &-content {
             @include flexAlignBetween;
             @include fullSize;
 
             position: relative;
+            padding-top: 320px;
 
             &-main {
                 width: 420px;
@@ -701,6 +706,7 @@
                     height: 40px;
                     border-radius: 5px;
                     border: 1px solid $cubeManatee;
+                    padding-left: 20px;
                 }
 
                 .subscribe {

@@ -1,3 +1,16 @@
+let bar = document.getElementsByClassName('header-bar');
+let button = document.getElementsByClassName('top-button');
+
+function whiteBar() {
+    if (window.pageYOffset > 60) {
+        bar[0].classList.add('white-bar');
+        button[0].style.display = 'flex';
+    } else {
+        bar[0].classList.remove('white-bar');
+        button[0].style.display = 'none'
+    }
+}
+
 new Vue({
     el: '#root',
     data: {
@@ -10,7 +23,7 @@ new Vue({
             'JOURNAL',
             'CONTACT',
             'MY ACCOUNT'
-        ] 
+        ]
     },
     methods: {
         toUp: function() {
@@ -18,6 +31,9 @@ new Vue({
             if (position > 0) {
                 window.scrollTo(0,0)
             }
+        },
+        next: function() {
+
         }
     }
 })
